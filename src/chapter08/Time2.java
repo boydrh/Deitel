@@ -76,5 +76,9 @@ public class Time2 {
 	public int getSecond(){
 		return second;
 	}
+	
+	public String toUniversalString(){
+		return String.format("%02d:%02d:%02d", getHour(), getMinute(), getSecond());
+	}
 
 }
